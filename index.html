@@ -4,14 +4,68 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BarberShop</title>
     <!-- fonts -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css
 "
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <picture class="header__img">
+            <source
+              srcset="
+                ./img/header/desktop/Logo-desktop@1x-webp.webp 1x,
+                ./img/header/desktop/Logo-desktop@2x-webp.webp 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+            <source
+              srcset="./img/header/desktop/Logo-desktop@1x.png 1x, ./img/header/desktop/Logo-desktop@2x.png 2x"
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <source
+              srcset="./img/header/tablet/Logo-tablet@1x-webp.webp 1x, ./img/header/tablet/Logo-tablet@2x-webp.webp 2x"
+              media="(min-width: 690px)"
+              type="image/webp"
+            />
+            <source
+              srcset="./img/header/tablet/Logo-tablet@1x.png 1x, ./img/header/tablet/Logo-tablet@2x.png 2x"
+              media="(min-width: 690px)"
+              type="image/png"
+            />
+            <source
+              srcset="./img/header/mobile/Logo-mobile@1x-webp.webp 1x, ./img/header/mobile/Logo-mobile@2x-webp.webp 2x"
+              media="(min-width: 480px)"
+              type="image/webp"
+            />
+            <source
+              srcset="./img/header/mobile/Logo-mobile@1x.png 1x, ./img/header/mobile/Logo-mobile@2x.png 2x"
+              media="(min-width: 480px)"
+              type="image/png"
+            />
+            <img src="./img/header/desktop/Logo-desktop@1x.png" alt="" />
+          </picture>
+
+          <svg class="header__icon" width="40" height="40" aria-label="Кнопка меню">
+            <use class="header__icon--open" href="./img/icons.svg#icon-menu-open"></use>
+            <use class="header__icon--close" href="./img/icons.svg#icon-menu-close"></use>
+          </svg>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
