@@ -133,6 +133,58 @@ h6 {
 }
 
 .header {
-  padding-top: 500px;
+  padding-top: 40px;
+  background-color: teal;
+}
+
+@media screen and (max-width: 767.98px) {
+  .nav {
+    display: none;
+  }
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+.menu-button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 100;
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
+}
+
+.header__icon--open {
+  opacity: 0;
+  transform: scale(1) rotate(0) translateY(0);
+  transform-origin: center;
+  transition: opacity 400ms ease, transform 400ms ease;
+}
+
+.header__icon--close {
+  opacity: 1;
+  transform: scale(1) rotate(0) translateY(0);
+  transform-origin: center;
+  transition: opacity 400ms ease, transform 400ms ease;
+}
+
+.menu-button.is-open .header__icon--close {
+  opacity: 0;
+}
+
+.menu-button.is-open .header__icon--open {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
