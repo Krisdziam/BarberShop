@@ -1,8 +1,22 @@
 .header {
   padding-top: 40px;
+}
+
+.logo {
+  width: 30%;
+  height: 600px;
+  float: left;
   background-color: teal;
 }
+
 .nav {
+  background-color: tomato;
+  width: 70%;
+  height: 600px;
+  float: right;
+  padding-left: 40px;
+  display: flex;
+
   @include mq(mobile-only) {
     display: none;
   }
@@ -15,6 +29,7 @@
 .header__img {
 }
 .header__list {
+  display: flex;
 }
 .header__item {
 }

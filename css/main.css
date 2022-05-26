@@ -134,7 +134,22 @@ h6 {
 
 .header {
   padding-top: 40px;
+}
+
+.logo {
+  width: 30%;
+  height: 600px;
+  float: left;
   background-color: teal;
+}
+
+.nav {
+  background-color: tomato;
+  width: 70%;
+  height: 600px;
+  float: right;
+  padding-left: 40px;
+  display: flex;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -147,6 +162,10 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__list {
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
